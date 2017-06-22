@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context="com.xin.bob.xmlparsertest.MainActivity">
+
+    <Button
+        android:id="@+id/btn_pull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pull" />
+
+    <Button
+        android:id="@+id/btn_sax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sax" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XML parse result: " />
+
+    <TextView
+        android:id="@+id/btn_parse_result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>
